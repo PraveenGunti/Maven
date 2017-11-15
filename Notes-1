@@ -35,6 +35,7 @@ A build tool takes care of everything for building a process. It does following:
 Difference between Ant and Maven:
 Ant and Maven both are build tools provided by Apache. The main purpose of these technologies is to ease the build process of a project.
 There are many differences between ant and maven that are given below:
+<<<<<<< HEAD
 				Ant										|				Maven
 -----------------------------------------------------------------------------------------------------------------------------------
 1)Ant doesn't has formal conventions, so we need 		| 1)Maven has a convention to place source code, compiled code etc. 
@@ -54,11 +55,12 @@ You need to provide order.								|
 6)The ant scripts are not reusable.						| 6)The maven plugins are reusable.
 -----------------------------------------------------------------------------------------------------------------------------------
 7)It is less preferred than Maven.						| 7)It is more preferred than Ant.
------------------------------------------------------------------------------------------------------------------------------------
+=======
 
 Maven Repository
 
-A maven repository is a directory of packaged JAR file with pom.xml file. Maven searches for dependencies in the repositories. There are 3 types of maven repository:
+A maven repository is a directory of packaged JAR file with pom.xml file. Maven searches for dependencies in the repositories.
+There are 3 types of maven repository:
 1.	Local Repository
 2.	Central Repository
 3.	Remote Repository
