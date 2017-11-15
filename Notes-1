@@ -1,4 +1,6 @@
 Maven
+-----
+
 Understanding the problem without Maven
 There are many problems that we face during the project development. They are discussed below:
 1) Adding set of Jars in each project: In case of struts, spring, hibernate frameworks, we need to add set of jar files in each project.
@@ -6,3 +8,59 @@ There are many problems that we face during the project development. They are di
 2) Creating the right project structure: We must create the right project structure in servlet, struts etc, otherwise it will 
    not be executed.
 3) Building and Deploying the project: We must have to build and deploy the project so that it may work.
+
+------
+
+What it does?
+Maven simplifies the above mentioned problems. It does mainly following tasks.
+1.	It makes a project easy to build
+2.	It provides uniform build process (maven project can be shared by all the maven projects)
+3.	It provides project information (log document, cross referenced sources, mailing list, dependency list, unit test reports etc.)
+4.	It is easy to migrate for new features of Maven
+Apache Maven helps to manage
+o	Builds
+o	Documentation
+o	Reporing
+o	SCMs
+o	Releases
+o	Distribution
+What is Build Tool
+A build tool takes care of everything for building a process. It does following:
+•	Generates source code (if auto-generated code is used)
+•	Generates documentation from source code
+•	Compiles source code
+•	Packages compiled code into JAR of ZIP file
+•	Installs the packaged code in local repository, server repository, or central repository
+
+Difference between Ant and Maven:
+Ant and Maven both are build tools provided by Apache. The main purpose of these technologies is to ease the build process of a project.
+There are many differences between ant and maven that are given below:
+				Ant										|									Maven
+-----------------------------------------------------------------------------------------------------------------------------------
+1)Ant doesn't has formal conventions, so we need 		|		1)Maven has a convention to place source code, compiled code etc. 
+to provide information of the project structure in 		|	  	So we don't need to provide information about the project structure
+build.xml file.	  										|		in pom.xml file.
+-----------------------------------------------------------------------------------------------------------------------------------
+2)Ant is procedural, you need to provide information	|		2)Maven is declarative, everything you define in the pom.xml file. 
+about what to do and when to do through code.			|
+You need to provide order.								|
+-----------------------------------------------------------------------------------------------------------------------------------
+3)There is no life cycle in Ant.						|		3)There is life cycle in Maven.
+-----------------------------------------------------------------------------------------------------------------------------------
+4)It is a tool box.										|		4)It is a framework.
+-----------------------------------------------------------------------------------------------------------------------------------
+5)It is mainly a build tool.							|		5)It is mainly a project management tool.
+-----------------------------------------------------------------------------------------------------------------------------------
+6)The ant scripts are not reusable.						|		6)The maven plugins are reusable.
+-----------------------------------------------------------------------------------------------------------------------------------
+7)It is less preferred than Maven.						|		7)It is more preferred than Ant.
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Maven Repository
+
+A maven repository is a directory of packaged JAR file with pom.xml file. Maven searches for dependencies in the repositories. There are 3 types of maven repository:
+1.	Local Repository
+2.	Central Repository
+3.	Remote Repository
+Maven searches for the dependencies in the following order:
+Local repository then Central repository then Remote repository.
